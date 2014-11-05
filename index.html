@@ -55,6 +55,21 @@
      c0-2.986,2.428-5.415,5.414-5.415c2.983,0,5.411,2.429,5.411,5.415C21.409,18.975,18.981,21.402,15.998,21.402z"></path>
             </g>
         </g>
+        <g id="facebook" data-iconmelon="Flat Social Icons:05a5948ba66490483129c2bcdaa481f1">
+            <path d="M16,0C7.163,0,0,7.164,0,16c0,8.837,7.163,16,16,16s16-7.163,16-16C32,7.164,24.836,0,16,0z M19.532,13.291
+     l-0.184,2.394h-2.454V24h-3.101v-8.315H12.14v-2.394h1.654v-1.608c0-0.708,0.018-1.802,0.533-2.479C14.869,8.487,15.614,8,16.895,8
+     c2.087,0,2.965,0.298,2.965,0.298l-0.414,2.451c0,0-0.689-0.2-1.332-0.2c-0.644,0-1.22,0.231-1.22,0.874v1.869H19.532z"></path>
+        </g>
+        <g id="twitter" data-iconmelon="Flat Social Icons:26b05726b10222fa77dc99e12fd47da2">
+            <path d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+	 M22.373,13.511c0.006,0.14,0.009,0.283,0.009,0.425c0,4.346-3.306,9.355-9.355,9.355c-1.856,0-3.585-0.544-5.04-1.477
+     c0.257,0.031,0.52,0.045,0.784,0.045c1.54,0,2.958-0.525,4.084-1.408c-1.439-0.025-2.653-0.977-3.071-2.282
+     c0.2,0.039,0.406,0.059,0.618,0.059c0.301,0,0.591-0.039,0.866-0.116c-1.505-0.301-2.639-1.63-2.639-3.224v-0.041
+     c0.445,0.245,0.952,0.394,1.49,0.411c-0.882-0.59-1.462-1.597-1.462-2.737c0-0.603,0.161-1.167,0.444-1.655
+     c1.623,1.991,4.046,3.299,6.778,3.436c-0.058-0.24-0.085-0.491-0.085-0.749c0-1.815,1.472-3.288,3.287-3.288
+     c0.946,0,1.802,0.399,2.399,1.038c0.751-0.147,1.454-0.42,2.09-0.797c-0.244,0.768-0.767,1.411-1.446,1.818
+     c0.665-0.08,1.299-0.256,1.889-0.518C23.575,12.468,23.016,13.047,22.373,13.511z"></path>
+        </g>
 </svg>
         <style>
                /* Sections
@@ -102,8 +117,7 @@
                     $('#fullpage').fullpage({
                         'navigation': true,
                         'navigationPosition': 'right',
-                        'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
-                        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                        anchors: ['Home', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
                         menu: '#menu'
                     });
                 })
@@ -112,9 +126,8 @@
                     });
                 dfd.resolve();
                 $('.owl-carousel').owlCarousel({
-                    navigation: true,
                     slideSpeed: 300,
-                    paginationSpeed: 400,
+                    pagination: false,
                     singleItem: true
                 });
             });
@@ -124,15 +137,21 @@
 
 <div id="fullpage">
 	<div class="section " id="section0">
-        <div class="container">
-            <div class="row">
-                <img src="images/FestivusLogo.png" width="160" height="160" class="center-block center" />
-            </div>
-            <div class="row" style="margin-top:25px">
-                <div class="owl-carousel center-block" style="color:white;width:400px">
-                    <img src="images/FestivusLogo.png" alt="The Last of us" width="160" height="160">
-                    <img src="images/FestivusLogo.png" alt="The Last of us" width="160" height="160">
-                    <img src="images/FestivusLogo.png" alt="The Last of us" width="160" height="160">
+        <div class="container" style="height:800px">
+            <div class="row" style="margin-top:25px;">
+                <div class="col-md-6">
+                    <div class="row" style="text-align:center;color:white;margin-top:25px;">
+                        <img src="images/FestivusLogo.png" width="160" height="160" class="center-block center" />
+                        <h1>Welcome to Festivus!</h1>
+                        <h3>Feel free to check out our app</h3>
+                    </div>
+                </div>
+                <div id="iphone" class="col-md-6" style="height:800px">
+                    <div class="owl-carousel center-block" style="color:white;width:300px;text-align:center;margin-top:120px;">
+                        <img src="images/IMG_3522_scaled.png" alt="The Last of us">
+                        <img src="images/IMG_3522_scaled.png" alt="The Last of us">
+                        <img src="images/IMG_3522_scaled.png" alt="The Last of us">
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,22 +191,109 @@
         </div>
 	</div>
 	<div class="section" id="section2">
-		<div class="intro">
-			<h1>Example</h1>
-			<p>HTML markup example to define 4 sections.</p>
-			<img src="imgs/example2.png" alt="example" />
-		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6" id="">
+                    <h2>Keep up with Festivals and Artists</h2>
+                    <p>
+                        New music festivals and artists are continuously emerging on to the scene. Use Festivus to keep up with the hottest festivals and the artists who play them.
+                    </p>
+                    <div class="feature">
+                        <svg viewBox="0 0 32 32" class="feature_icon">
+                            <use xlink:href="#graph-pie1"></use>
+                        </svg>
+                        <div>
+                            <h4>#Festivals</h4>
+                            <p>Check out their line ups and explore their artists.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg viewBox="0 0 32 32" class="feature_icon">
+                            <use xlink:href="#joystick"></use>
+                        </svg>
+                        <div>
+                            <h4>%Artists</h4>
+                            <p>Listen to their sounds and explore the festivals they're playing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6  col-lg-6">
+                    <img src="images/features1b.png" class="img-responsive image_back" id="" alt="img">
+                    <img src="images/features1a.png" class="img-responsive image_front" id="" alt="img">
+                </div>
+            </div>
+        </div>
 	</div>
 	<div class="section" id="section3">
-		<div class="intro">
-			<h1>Working On Tablets</h1>
-			<p>
-				Designed to fit to different screen sizes as well as tablet and mobile devices.
-				<br /><br /><br /><br /><br /><br />
-			</p>
-		</div>
-		<img src="imgs/tablets.png" alt="tablets" />
+        <div class="container">
+            <div class="row" id="features_3_intro">
+                <h2 style="color:#18bcf9;">#FESTIVALS, %ARTISTS, -CREWS, and @USERS</h2>
+                <p>With our unique tagging system, don't just follow the people you enjoy,</p>
+                <p>but the things you enjoy as well.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_left">
+                    <div class="feature">
+                        <h4>#FESTIVALS</h4>
+                        <p>Find the right #festival for you.</p>
+                        <p>Search by location or artist.</p>
+                        <p>Check out lineups and artist info with ease.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>%ARTISTS</h4>
+                        <p>Follow the %artists you love</p>
+                        <p>then find out what others are saying</p>
+                        <p>about them.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_center">
+                    <img src="images/tagsmockup.png" class="img-responsive" id="features3_image" alt="img">
+                </div>
+                <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_right">
+                    <div class="feature">
+                        <h4>-CREWS</h4>
+                        <p>Build a crew with your friends, and</p>
+                        <p>see what they're up to.</p>
+                        <p></p>
+                    </div>
+                    <div class="feature">
+                        <h4>@USERS</h4>
+                        <p>Follow @users you enjoy spending</p>
+                        <p>festival time with, and stay connnected</p>
+                        <p>for future festivals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
+    <section class="section" id="section4">
+        <div class="container" style="border: 2px solid red;">
+            <div class="row" id="newsletter" style="text-align: center;">
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+                    <h2>Want to get the latest updates on festivus?</h2>
+                    <div id="newsletter_form">
+                        <form action="php/send.php" method="post" class="subscribe-form" id="subscribe-form">
+                            <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
+                            <button type="submit" class="subscribe-submit">Notify Me</button>
+                        </form>
+                    </div>
+                    <div id="preview"></div>
+                    <p>Contact: info@festivusapp.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" id="share">
+                    <div id="social_icons">
+                        <ul>
+                            <li><svg viewBox="0 0 32 32" id="fb_icon" onclick="location.href='#'"><use xlink:href="#facebook"></use></svg></li>
+                            <li><svg viewBox="0 0 32 32" id="tw_icon" onclick="location.href='#'"><use xlink:href="#twitter"></use></svg></li>
+                        </ul>
+                    </div>
+                    <p>Copyright &copy; 2014 Festivus</p>
+                </div>
+            </div>
+        </div>
+    </section>   
 </div>
 
 
