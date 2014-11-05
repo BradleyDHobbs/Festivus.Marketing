@@ -9,102 +9,167 @@
 	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
 	<meta name="Resource-type" content="Document" />
 
-
+    <link href="Content/bootstrap.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<!--<link rel="stylesheet" type="text/css" href="css/examples.css" />-->
 	<link rel="stylesheet" type="text/css" href="css/Site.css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/owl.theme.css" rel="stylesheet" />
 
+    <svg id="svg-source" height="0" version="1.1"
+         xmlns="http://www.w3.org/2000/svg" style="position:absolute; margin-left: -100%"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="graph-pie1" data-iconmelon="Simple Line Icons:71c74430bea16c2cc5114c5abdd1f0b6">
+            <g>
+                <path d="M17.703,0.025h-0.579v15.794H31.92l0.041-0.534C31.983,14.961,32,14.639,32,14.315
+     C32,6.436,25.586,0.025,17.703,0.025z M30.837,14.661H18.281V1.194c6.979,0.302,12.562,6.071,12.562,13.121
+     C30.843,14.431,30.84,14.548,30.837,14.661z"></path>
+                <path d="M14.873,3.389h-0.578C6.412,3.389,0,9.802,0,17.685c0,7.88,6.412,14.291,14.295,14.291
+     c7.496,0,13.76-5.855,14.253-13.333l0.047-0.616H14.873V3.389z M27.344,19.183c-0.75,6.572-6.365,11.637-13.049,11.637
+     c-7.244,0-13.138-5.891-13.138-13.135c0-7.051,5.579-12.823,12.559-13.127v14.625H27.344z"></path>
+            </g>
+        </g>
+        <g id="joystick" data-iconmelon="Simple Line Icons:c3d9dd1fc9e06f9516aae942ade2b3b7">
+            <g>
+                <path d="M20.301,25.422h-8.608c-0.983,0-1.322,0.469-1.438,0.748c-0.116,0.277-0.205,0.847,0.49,1.54l3.59,3.593
+     c0.442,0.443,1.03,0.688,1.663,0.688c0.63,0,1.219-0.244,1.661-0.688l3.59-3.593c0.698-0.696,0.609-1.266,0.493-1.544
+     C21.63,25.891,21.288,25.422,20.301,25.422z M20.369,26.828L16.78,30.42c-0.416,0.413-1.15,0.413-1.563,0l-3.593-3.592
+     c-0.057-0.054-0.095-0.104-0.127-0.146c0.053-0.006,0.118-0.013,0.195-0.013h8.608c0.081,0,0.146,0.007,0.196,0.013
+     C20.465,26.724,20.423,26.774,20.369,26.828z"></path>
+                <path d="M31.313,14.322l-3.596-3.59c-0.377-0.377-0.761-0.568-1.144-0.568c-0.526,0-1.142,0.395-1.142,1.517v8.612
+     c0,1.121,0.615,1.519,1.142,1.519c0.383,0,0.767-0.191,1.144-0.57l3.596-3.591C31.756,17.206,32,16.617,32,15.986
+     C32,15.356,31.756,14.767,31.313,14.322z M30.431,16.768l-3.592,3.591c-0.057,0.059-0.104,0.099-0.148,0.131
+     c-0.007-0.05-0.01-0.116-0.01-0.196v-8.612c0-0.079,0.003-0.143,0.01-0.194c0.044,0.032,0.092,0.072,0.148,0.129l3.592,3.59
+     c0.208,0.206,0.321,0.484,0.321,0.781S30.639,16.56,30.431,16.768z"></path>
+                <path d="M11.692,6.551h8.608c0.987,0,1.329-0.464,1.441-0.74c0.116-0.279,0.205-0.849-0.493-1.545l-3.59-3.59
+     c-0.883-0.887-2.439-0.887-3.324,0l-3.59,3.59c-0.695,0.693-0.606,1.264-0.49,1.542C10.37,6.087,10.709,6.551,11.692,6.551z
+     M11.624,5.146l3.593-3.59c0.413-0.414,1.147-0.414,1.563,0l3.589,3.59c0.054,0.057,0.096,0.105,0.128,0.146
+     c-0.051,0.008-0.115,0.012-0.196,0.012h-8.608c-0.077,0-0.143-0.004-0.195-0.012C11.529,5.252,11.567,5.203,11.624,5.146z"></path>
+                <path d="M5.42,10.164c-0.384,0-0.767,0.191-1.144,0.568l-3.59,3.59C0.24,14.767,0,15.356,0,15.986
+     c0,0.631,0.24,1.22,0.687,1.664l3.59,3.591c0.377,0.379,0.76,0.57,1.144,0.57c0.374,0,0.71-0.196,0.912-0.531
+     c0.154-0.256,0.231-0.587,0.231-0.987v-8.612C6.563,10.559,5.946,10.164,5.42,10.164z M5.315,20.293
+     c0,0.08-0.006,0.146-0.012,0.196c-0.041-0.032-0.092-0.072-0.146-0.131l-3.589-3.591c-0.432-0.431-0.432-1.132,0-1.562l3.589-3.59
+     c0.054-0.057,0.104-0.097,0.146-0.129c0.006,0.052,0.012,0.115,0.012,0.194V20.293z"></path>
+                <path d="M15.998,9.328c-3.673,0-6.659,2.988-6.659,6.662c0,3.675,2.986,6.659,6.659,6.659
+     c3.67,0,6.656-2.984,6.656-6.659C22.654,12.316,19.668,9.328,15.998,9.328z M15.998,21.402c-2.986,0-5.414-2.428-5.414-5.412
+     c0-2.986,2.428-5.415,5.414-5.415c2.983,0,5.411,2.429,5.411,5.415C21.409,18.975,18.981,21.402,15.998,21.402z"></path>
+            </g>
+        </g>
+</svg>
+        <style>
+               /* Sections
+            * --------------------------------------- */
 
-	<style>
+               #section2 img {
+                   margin: 20px 0 0 52px;
+               }
 
-		/* Sections
-		 * --------------------------------------- */
-		#section0 img,
-		#section1 img{
-			margin: 20px 0 0 0;
-		}
-		#section2 img{
-			margin: 20px 0 0 52px;
-		}
-		#section3 img{
-			bottom: 0px;
-			position: absolute;
-			margin-left: -420px;
-		}
-		.intro p{
-			width: 50%;
-			margin: 0 auto;
-			font-size: 1.5em;
-		}
-		.twitter-share-button{
-			position: absolute;
-			z-index: 99;
-			right: 149px;
-			top: 9px;
-		}
+               #section3 img {
+                   bottom: 0px;
+                   position: absolute;
+                   margin-left: -420px;
+               }
 
-	</style>
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+               .intro p {
+                   width: 50%;
+                   margin: 0 auto;
+                   font-size: 1.5em;
+               }
 
-	<script src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
+               .twitter-share-button {
+                   position: absolute;
+                   z-index: 99;
+                   right: 149px;
+                   top: 9px;
+               }
+        </style>
+        <!--[if IE]>
+            <script type="text/javascript">
+                 var console = { log: function() {} };
+            </script>
+        <![endif]-->
 
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-				menu: '#menu'
-			});
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.fullPage.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
 
-		});
-	</script>
+        <script>
+            $(document).ready(function () {
+                var dfd = $.Deferred();
+                dfd.done(function () {
+                    $('#fullpage').fullpage({
+                        'navigation': true,
+                        'navigationPosition': 'right',
+                        'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+                        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                        menu: '#menu'
+                    });
+                })
+                    .done(function () {
 
+                    });
+                dfd.resolve();
+                $('.owl-carousel').owlCarousel({
+                    navigation: true,
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    singleItem: true
+                });
+            });
+        </script>
 </head>
 <body>
 
-
 <div id="fullpage">
 	<div class="section " id="section0">
-		<h1>Welcome to Festivus!</h1>
-		<p>Create Beautiful Fullscreen Scrolling Websites</p>
+        <div class="container">
+            <div class="row">
+                <img src="images/FestivusLogo.png" width="160" height="160" class="center-block center" />
+            </div>
+            <div class="row" style="margin-top:25px">
+                <div class="owl-carousel center-block" style="color:white;width:400px">
+                    <img src="images/FestivusLogo.png" alt="The Last of us" width="160" height="160">
+                    <img src="images/FestivusLogo.png" alt="The Last of us" width="160" height="160">
+                    <img src="images/FestivusLogo.png" alt="The Last of us" width="160" height="160">
+                </div>
+            </div>
+        </div>
 	</div>
 	<div class="section" id="section1">
-	    <div class="slide">
-			<div class="intro">
-				<h1>Create Sliders</h1>
-				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-				<img src="imgs/slider.png" alt="slider" />
-			</div>
-
-		</div>
-	    <div class="slide">
-			<div class="intro">
-				<img src="imgs/1.png" alt="simple" />
-				<h1>Simple</h1>
-				<p>Easy to use. Configurable and customizable.</p>
-			</div>
-		</div>
-	    <div class="slide">
-			<div class="intro">
-				<img src="imgs/2.png" alt="Cool" />
-				<h1>Cool</h1>
-				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
-			</div>
-		</div>
-	    <div class="slide">
-			<div class="intro">
-				<img src="imgs/3.png" alt="Compatible" />
-				<h1>Compatible</h1>
-				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
-			</div>
-		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6  col-lg-6">
+                    <img src="images/features1b.png" class="img-responsive image_back" id="" alt="img">
+                    <img src="images/features1a.png" class="img-responsive image_front" id="" alt="img">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6" id="">
+                    <h2>Keep up with Festivals and Artists</h2>
+                    <p>
+                        New music festivals and artists are continuously emerging on to the scene. Use Festivus to keep up with the hottest festivals and the artists who play them.
+                    </p>
+                    <div class="feature">
+                        <svg viewBox="0 0 32 32" class="feature_icon">
+                            <use xlink:href="#graph-pie1"></use>
+                        </svg>
+                        <div>
+                            <h4>#Festivals</h4>
+                            <p>Check out their line ups and explore their artists.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg viewBox="0 0 32 32" class="feature_icon">
+                            <use xlink:href="#joystick"></use>
+                        </svg>
+                        <div>
+                            <h4>%Artists</h4>
+                            <p>Listen to their sounds and explore the festivals they're playing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
@@ -124,6 +189,8 @@
 		<img src="imgs/tablets.png" alt="tablets" />
 	</div>
 </div>
+
+
 
 </body>
 </html>
