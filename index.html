@@ -125,11 +125,20 @@
 
                     });
                 dfd.resolve();
-                $('.owl-carousel').owlCarousel({
+
+                var owl = $(".owl-carousel");
+                owl.owlCarousel({
                     slideSpeed: 300,
                     pagination: false,
                     singleItem: true
                 });
+
+                $("#next").click(function () {
+                    owl.trigger('owl.next');
+                })
+                $("#prev").click(function () {
+                    owl.trigger('owl.prev');
+                })
             });
         </script>
 </head>
@@ -139,24 +148,45 @@
 	<div class="section " id="section0">
         <div class="container" style="height:800px">
             <div class="row" style="margin-top:25px;">
-                <div class="col-md-6">
+                <div class="col-md-6" style="margin-top:84px">
                     <div class="row" style="text-align:center;color:white;margin-top:25px;">
-                        <img src="images/FestivusLogo.png" width="160" height="160" class="center-block center" />
+                        <img src="images/FestivusLogo.png" width="300" height="300" class="center-block center" />
                         <h1>Welcome to Festivus!</h1>
-                        <h3>Feel free to check out our app</h3>
+                    </div>
+                    <div class="row" style="text-align:center;color:white;margin-top:25px;">
+                        <h3>Want to get the latest updates?</h3>
+                        <div id="newsletter_form">
+                            <form action="php/send.php" method="post" class="subscribe-form" id="subscribe-form">
+                                <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
+                                <button type="submit" class="subscribe-submit">Notify Me</button>
+                            </form>
+                        </div>
+                        <div id="preview"></div>
+                        <p class="brad">Contact: info@festivusapp.com</p>
                     </div>
                 </div>
                 <div id="iphone" class="col-md-6" style="height:800px">
-                    <div class="owl-carousel center-block" style="color:white;width:300px;text-align:center;margin-top:120px;">
-                        <img src="images/IMG_3522_scaled.png" alt="The Last of us">
-                        <img src="images/IMG_3522_scaled.png" alt="The Last of us">
-                        <img src="images/IMG_3522_scaled.png" alt="The Last of us">
+
+                    <span id="next" style="cursor:pointer"><img src="images/chevron15.png" style="position:absolute;top:50%;margin-top:-64px;right:0;" /></span>
+                    <span id="prev" style="cursor:pointer"><img src="images/chevron16.png" style="position:absolute;top:50%;margin-top:-64px;left:0;" /></span>
+
+                    <div class="owl-carousel center-block" style="color:white;width:315px;text-align:center;margin-top:110px;">
+                        <img src="images/IMG_3510.png" alt="The Last of us">
+                        <img src="images/IMG_3511.png" alt="The Last of us">
+                        <img src="images/IMG_3512.png" alt="The Last of us">
+                        <img src="images/IMG_3513.png" alt="The Last of us">
+                        <img src="images/IMG_3514.png" alt="The Last of us">
+                        <img src="images/IMG_3517.png" alt="The Last of us">
+                        <img src="images/IMG_3519.png" alt="The Last of us">
+                        <img src="images/IMG_3520.png" alt="The Last of us">
+                        <img src="images/IMG_3521.png" alt="The Last of us">
+                        <img src="images/IMG_3528.png" alt="The Last of us">
                     </div>
                 </div>
             </div>
         </div>
 	</div>
-	<div class="section" id="section1">
+	<!--<div class="section" id="section1">
         <div class="container" style="vertical-align:middle;display:table;height:100%">
             <div class="row" style="vertical-align:middle;display:table-cell;">
                 <div class="col-sm-6 col-md-6  col-lg-6">
@@ -302,7 +332,7 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>-->   
 </div>
 
 
