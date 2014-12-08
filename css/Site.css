@@ -151,7 +151,7 @@ hr {
 
 #features_1_content, #features1a_image, #features1b_image {opacity:0;}
 
-#section0 {
+#fullpage {
     background: url(../images/bg9.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -363,4 +363,11 @@ hr {
 .brad {
         font-family: 'Lane', sans-serif;
     font-weight: normal;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .owl-wrapper {
+        margin-top:110px;
+    }
 }
